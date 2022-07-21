@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | NFT preview card component</title>
 
@@ -12,22 +13,95 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      background-color: hsl(217, 54%, 11%);
+    }
+    .card {
+      display: flex;
+      width: 330px;
+      height: 600px;
+      background-color: hsl(216, 50%, 16%);
+      border-radius: 15px;
+      
+    }
+    .card > .content > .image {
+      display: flex;
+      padding: 20px ;
+      width: 288px;
+      border-radius: 28px;
+      overflow: hidden;
+    }
+     p { 
+      padding: 20px;
+      color: hsl(215, 51%, 70%) ;
+      font-size: 18px;
+    }
+     .content {
+      font-family: 'Outfit', sans-serif;
+    }
+    .time { 
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+    }
+    h2 {
+      padding-left: 20px;
+      color: white;
+      font-size: 21px;
+    }
+    .timeleft {
+      color: hsl(215, 51%, 70%) ;
+    }
+    .price {
+      color: hsl(178, 100%, 50%);
+    }
+    hr {
+      display: block;
+      border: 0;
+      border-top: 1px solid hsl(215, 51%, 70%);
+      width: 290px;
+    }
+    
+    
+  
+  
+  
   </style>
 </head>
 <body>
+   <div class="card">
+       
+      
+       <div class="content">
+        <img class="image" src="/images/image-equilibrium.jpg">
+       <div>
+         <h2>Equilibrium #3429</h2>
+       </div>
 
-  Equilibrium #3429
+       <div>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+       </div>
 
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
+       <div class="time">
+        <span class="price">
+          0.041 ETH
+         </span>
+         <span class="timeleft">
+          3 days left
+         </span> 
+       </div>
+       <hr/>
+       <div>
+        Creation of Jules Wyvern
+       </div>
+       </div>
+    </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Your Name Here</a>
   </div>
 </body>
 </html>
